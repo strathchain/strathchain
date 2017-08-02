@@ -1,23 +1,18 @@
-Yobichain
+Strathchain
 =========
 
-> WARNING: Yobichain is intended for experimenting and learning, NOT for a production environment.
+> WARNING: Strathchain is intended for experimenting and learning, NOT for a production environment.
 
-![Image of Yobi](http://www.primechain.in/img/github_yobichain.png)
-
-YobiChain is your very own private blockchain ecosystem preloaded with development tools, database, web & FTP servers and the following 4 blockchain applications:
+Strathchain is a private blockchain ecosystem preloaded with development tools, database, web & FTP servers and blockchain applications.
 
 1. HashChain, a simple blockchain powered drag n drop solution for authenticating and verifying electronic records.
-
 2. PrimeVault, a simple blockchain powered document storage and retrieval system.
-
 3. PrimeContract, a simple blockchain powered system for digitally signng contracts.
+4. StrathWallet, a simple blockchain powered wallet for Strathcoins, a smart asset.
 
-4. YobiWallet, a simple blockchain powered wallet for Yobicoins, a smart asset.
+This version of Strathchain runs on [Multichain](https://github.com/MultiChain).
 
-Yobichain is maintained by [Primechain Technologies Pvt. Ltd.](http://www.primechain.in). This version of Yobichain runs on [Multichain](https://github.com/MultiChain).
-
-YobiChain is ideal for
+Strathchain is ideal for
 
 * Startups looking to quickly build a blockchain powered prototype, PoC or MVP.
 * Serious researchers / enthusiasts looking to experiment with a live blockchain.
@@ -37,7 +32,7 @@ This section presumes that you have root access to the server mentioned above an
 **Step 1.** Install git and clone the yobichain repository
 
     sudo apt-get install git
-    sudo git clone https://github.com/Primechain/yobichain.git
+    sudo git clone https://github.com/strathchain/strathchain.git
 
 **Step 2.** Harden the base operating system (Ubuntu 16.04.2 x64). This will also create a new user called yobiuser with the password entered by you below.
 
@@ -64,7 +59,7 @@ To use PrimeVault, see the instructions at [https://github.com/Primechain/yobiap
 To use PrimeContract, see the instructions at [https://github.com/Primechain/yobiapps/blob/master/README.md#primecontract](https://github.com/Primechain/yobiapps/blob/master/README.md#primecontract)
 
 
-To use YobiWallet, see the instructions at [https://github.com/Primechain/yobiapps/blob/master/README.md#yobiwallet](https://github.com/Primechain/yobiapps/blob/master/README.md#yobiwallet)
+To use StrathWallet, see the instructions at [https://github.com/Primechain/yobiapps/blob/master/README.md#yobiwallet](https://github.com/Primechain/yobiapps/blob/master/README.md#yobiwallet)
 
 
 Notes
@@ -87,7 +82,7 @@ This will:
 
 8. set up PrimeContract, a simple blockchain powered system for digitally signng contracts.
 
-9. set up YobiWallet, a simple blockchain powered wallet for Yobicoins, a smart asset.
+9. set up StrathWallet, a simple blockchain powered wallet for Strathcoins, a smart asset.
 
 In case something goes wrong, you can roll back the multichain installation using
 
@@ -102,19 +97,3 @@ Live demo
 * To authenticate a file using hashchain, visit http://52.172.209.229/hashchain/hashchain_authenticator.php and to verify a file using hashchain, visit http://52.172.209.229/hashchain/
 
 * To access the yobiapps, visit: http://52.172.209.229/yobiapps
-
-
-Planned roadmap
------
-+ ~~[ ] Installation of PrimeVault~~ **done**
-+ ~~[ ] Installation of PrimeContract~~ **done**
-+ ~~[ ] Installation of YobiWallet~~ **done**
-
-
-Contributors
--------------
-A non-exhaustive list of contributors:
-* Sripathi Srinivasan
-* Rohas Nagpal
-* Sudin Baraokar
-* Shinam Arora
