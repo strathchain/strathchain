@@ -22,19 +22,19 @@ Strathchain is ideal for
 System Requirements
 -------------------
 
-To set up Yobichain, you will need 1 server (min 2 GB RAM, 2 CPUs) running Ubuntu 16.04.2 x64 and php 7.0. If you don't have access to an Ubuntu server, you can set it up using Digtal Ocean's one-click app  `PhpMyAdmin on 16.04` or `LAMP on 16.04`. Use this link to get a free $10 credit from Digital Ocean: https://m.do.co/c/dc0df9a8a187 
+To set up Strathchain, you will need 1 server (min 2 GB RAM, 2 CPUs) running Ubuntu 16.04.2 x64 and php 7.0.
 
 Installation
 ------------
 
-This section presumes that you have root access to the server mentioned above and want to install Yobichain for all users on the system.
+This section presumes that you have root access to the server mentioned above and want to install Strathchain for all users on the system.
 
-**Step 1.** Install git and clone the yobichain repository
+**Step 1.** Install git and clone the strathchain repository
 
     sudo apt-get install git
     sudo git clone https://github.com/strathchain/strathchain.git
 
-**Step 2.** Harden the base operating system (Ubuntu 16.04.2 x64). This will also create a new user called yobiuser with the password entered by you below.
+**Step 2.** Harden the base operating system (Ubuntu 16.04.2 x64). This will also create a new user called strathuser with the password entered by you below.
 
     cd yobichain
     sudo bash -e hardening.sh <password>
@@ -44,7 +44,7 @@ This section presumes that you have root access to the server mentioned above an
     sudo bash -e ftp.sh <username> <password>
 
 
-**Step 4.** Install, configure and run the Multichain blockchain, Multichain web-demo and Multichain Exporer. This also sets up HashChain, PrimeVault, PrimeContract and YobiWallet. The RPC port will be set as `15590` and the Network port will be set as `61172`. If you get a "locale error" using Terminal on mac, go to Terminal -> Preferences -> Profiles and uncheck "Set locale environment variables on startup"
+**Step 4.** Install, configure and run the Multichain blockchain, Multichain web-demo and Multichain Exporer. This also sets up HashChain, PrimeVault, PrimeContract and StrathWallet. The RPC port will be set as `9442` and the Network port will be set as `9443`. If you get a "locale error" using Terminal on mac, go to Terminal -> Preferences -> Profiles and uncheck "Set locale environment variables on startup"
 
     sudo bash -e multichain.sh <chain-name> <rpc-username> <rpc-password>
 		
@@ -57,7 +57,6 @@ To use hashchain, see the instructions at [https://github.com/Primechain/hashcha
 To use PrimeVault, see the instructions at [https://github.com/Primechain/yobiapps/blob/master/README.md#primevault](https://github.com/Primechain/yobiapps/blob/master/README.md#primevault)
 
 To use PrimeContract, see the instructions at [https://github.com/Primechain/yobiapps/blob/master/README.md#primecontract](https://github.com/Primechain/yobiapps/blob/master/README.md#primecontract)
-
 
 To use StrathWallet, see the instructions at [https://github.com/Primechain/yobiapps/blob/master/README.md#yobiwallet](https://github.com/Primechain/yobiapps/blob/master/README.md#yobiwallet)
 
@@ -96,4 +95,4 @@ Live demo
 
 * To authenticate a file using hashchain, visit http://52.172.209.229/hashchain/hashchain_authenticator.php and to verify a file using hashchain, visit http://52.172.209.229/hashchain/
 
-* To access the yobiapps, visit: http://52.172.209.229/yobiapps
+* To access the apps, visit: http://52.172.209.229/apps
