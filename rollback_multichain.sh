@@ -8,7 +8,7 @@
 # bold=$(tput bold)
 # normal=$(tput sgr0)
 
-username='yobiuser'
+username='strathuser'
 
 echo '----------------------------------------'
 echo -e 'RESTORING.....'
@@ -17,7 +17,7 @@ echo '----------------------------------------'
 ps axf | grep 'multichaind' | grep -v grep | awk '{print "kill -9 " $1}' | sh
 rm -rf /home/$username/.multichain/*
 rm -rf /var/www/html/hashchain
-rm -rf /var/www/html/yobiapps
+rm -rf /var/www/html/strathapps
 rm -rf /var/www/html/multichain-web-demo
 ps axf | grep 'python -m Mce.abe --config' | grep -v grep | awk '{print "kill -9 " $1}' | sh
 rm -rf /home/$username/multichain-explorer/

@@ -5,7 +5,7 @@ sudo apt-get --assume-yes install jq git curl
 username=$1			# User name
 chainname=$2		# Chain name
 webserver_activeDirectory='/var/www/html'
-assetName='yobicoin'
+assetName='strathcoin'
 
 homedir=`su -l $username -c 'cd ~ && pwd'`
 
@@ -44,14 +44,14 @@ su -l $username -c  "multichain-cli "$chainname" subscribe contract_invited_sign
 
 
 ###
-## INSTALLING & CONFIGURING YOBIAPPS
+## INSTALLING & CONFIGURING STRATHAPPS
 ###
 cd $webserver_activeDirectory
-git clone https://github.com/Primechain/yobiapps.git
+git clone https://github.com/strathchain/strathapps.git
 
-# Configuring Yobiapps
-sudo sed -ie 's/$CHAIN_NAME =.*;/$CHAIN_NAME = "'$chainname'";/g' $webserver_activeDirectory/yobiapps/config.php
-sudo sed -ie 's/RPC_USER =.*;/RPC_USER = "'$rpcuser'";/g' $webserver_activeDirectory/yobiapps/config.php
-sudo sed -ie 's/RPC_PASSWORD =.*;/RPC_PASSWORD = "'$rpcpassword'";/g' $webserver_activeDirectory/yobiapps/config.php
-sudo sed -ie 's/RPC_PORT =.*;/RPC_PORT = "'$rpcport'";/g' $webserver_activeDirectory/yobiapps/config.php
-sudo sed -ie 's/MANAGER_ADDRESS =.*;/MANAGER_ADDRESS = "'$addr'";/g' $webserver_activeDirectory/yobiapps/config.php
+# Configuring strathapps
+sudo sed -ie 's/$CHAIN_NAME =.*;/$CHAIN_NAME = "'$chainname'";/g' $webserver_activeDirectory/strathapps/config.php
+sudo sed -ie 's/RPC_USER =.*;/RPC_USER = "'$rpcuser'";/g' $webserver_activeDirectory/strathapps/config.php
+sudo sed -ie 's/RPC_PASSWORD =.*;/RPC_PASSWORD = "'$rpcpassword'";/g' $webserver_activeDirectory/strathapps/config.php
+sudo sed -ie 's/RPC_PORT =.*;/RPC_PORT = "'$rpcport'";/g' $webserver_activeDirectory/strathapps/config.php
+sudo sed -ie 's/MANAGER_ADDRESS =.*;/MANAGER_ADDRESS = "'$addr'";/g' $webserver_activeDirectory/strathapps/config.php

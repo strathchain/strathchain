@@ -36,7 +36,7 @@ This section presumes that you have root access to the server mentioned above an
 
 **Step 2.** Harden the base operating system (Ubuntu 16.04.2 x64). This will also create a new user called strathuser with the password entered by you below.
 
-    cd yobichain
+    cd strathchain
     sudo bash -e hardening.sh <password>
 
 **Step 3.** Install the FTP server. This will set up the FTP server. For logging in, use the IP address of your server as the `host`. The username and password are as entered by you below. The connection is `SFTP`.
@@ -46,7 +46,7 @@ This section presumes that you have root access to the server mentioned above an
 
 **Step 4.** Install, configure and run the Multichain blockchain, Multichain web-demo and Multichain Exporer. This also sets up HashChain, PrimeVault, PrimeContract and StrathWallet. The RPC port will be set as `9442` and the Network port will be set as `9443`. If you get a "locale error" using Terminal on mac, go to Terminal -> Preferences -> Profiles and uncheck "Set locale environment variables on startup"
 
-    sudo bash -e multichain.sh <chain-name> <rpc-username> <rpc-password>
+    sudo bash -e multichain.sh <rpc-username> <rpc-password>
 		
 To access Multichain web-demo, visit `http://<IP Address>/multichain-web-demo`
 

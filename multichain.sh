@@ -9,18 +9,18 @@
 # bold=$(tput bold)
 # normal=$(tput sgr0)
 
-chainname=$1
-rpcuser=$2
-rpcpassword=$3
-assetName='yobicoin'
-protocol=10007
-networkport=61172
-rpcport=15590
+chainname='strathchain'
+rpcuser=$1
+rpcpassword=$2
+assetName='strathcoin'
+protocol=10008
+networkport=9443
+rpcport=9442
 explorerport=2750
 adminNodeName=$chainname'_Admin'
 explorerDisplayName=$chainname
 phpinipath='/etc/php/7.0/apache2/php.ini'
-username='yobiuser'
+username='strathchainuser'
 
 echo '----------------------------------------'
 echo -e 'INSTALLING PREREQUISITES.....'
@@ -223,14 +223,14 @@ sudo sed -ie 's/MANAGER_ADDRESS =.*;/MANAGER_ADDRESS = "'$addr'";/g' /var/www/ht
 ###
 ## INSTALLING & CONFIGURING YOBIAPPS
 ###
-git clone https://github.com/Primechain/yobiapps.git
+git clone https://github.com/strathchain/strathapps.git
 
 # Configuring Yobiapps
-sudo sed -ie 's/$CHAIN_NAME =.*;/$CHAIN_NAME = "'$chainname'";/g' /var/www/html/yobiapps/config.php
-sudo sed -ie 's/RPC_USER =.*;/RPC_USER = "'$rpcuser'";/g' /var/www/html/yobiapps/config.php
-sudo sed -ie 's/RPC_PASSWORD =.*;/RPC_PASSWORD = "'$rpcpassword'";/g' /var/www/html/yobiapps/config.php
-sudo sed -ie 's/RPC_PORT =.*;/RPC_PORT = "'$rpcport'";/g' /var/www/html/yobiapps/config.php
-sudo sed -ie 's/MANAGER_ADDRESS =.*;/MANAGER_ADDRESS = "'$addr'";/g' /var/www/html/yobiapps/config.php
+sudo sed -ie 's/$CHAIN_NAME =.*;/$CHAIN_NAME = "'$chainname'";/g' /var/www/html/strathapps/config.php
+sudo sed -ie 's/RPC_USER =.*;/RPC_USER = "'$rpcuser'";/g' /var/www/html/strathapps/config.php
+sudo sed -ie 's/RPC_PASSWORD =.*;/RPC_PASSWORD = "'$rpcpassword'";/g' /var/www/html/strathapps/config.php
+sudo sed -ie 's/RPC_PORT =.*;/RPC_PORT = "'$rpcport'";/g' /var/www/html/strathapps/config.php
+sudo sed -ie 's/MANAGER_ADDRESS =.*;/MANAGER_ADDRESS = "'$addr'";/g' /var/www/html/strathapps/config.php
 
 
 ###
