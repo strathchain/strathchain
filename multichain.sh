@@ -221,11 +221,11 @@ sudo sed -ie 's/MANAGER_ADDRESS =.*;/MANAGER_ADDRESS = "'$addr'";/g' /var/www/ht
 
 
 ###
-## INSTALLING & CONFIGURING YOBIAPPS
+## INSTALLING & CONFIGURING STRATHAPPS
 ###
 git clone https://github.com/strathchain/strathapps.git
 
-# Configuring Yobiapps
+# Configuring strathapps
 sudo sed -ie 's/$CHAIN_NAME =.*;/$CHAIN_NAME = "'$chainname'";/g' /var/www/html/strathapps/config.php
 sudo sed -ie 's/RPC_USER =.*;/RPC_USER = "'$rpcuser'";/g' /var/www/html/strathapps/config.php
 sudo sed -ie 's/RPC_PASSWORD =.*;/RPC_PASSWORD = "'$rpcpassword'";/g' /var/www/html/strathapps/config.php
