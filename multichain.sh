@@ -16,7 +16,7 @@ assetName='strathcoin'
 protocol=10008
 networkport=9443
 rpcport=9442
-explorerport=2750
+explorerport=8080
 adminNodeName=$chainname'_Admin'
 explorerDisplayName=$chainname
 phpinipath='/etc/php/7.0/apache2/php.ini'
@@ -26,7 +26,7 @@ echo '----------------------------------------'
 echo -e 'INSTALLING PREREQUISITES.....'
 echo '----------------------------------------'
 
-cd .. 
+cd ..
 
 sudo apt-get --assume-yes update
 sudo apt-get --assume-yes install jq git vsftpd aptitude apache2-utils php-curl php7.0-curl sqlite3 libsqlite3-dev python-dev gcc python-pip
