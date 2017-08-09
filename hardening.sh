@@ -9,7 +9,7 @@
 # bold=$(tput bold)
 # normal=$(tput sgr0)
 
-username='yobiuser'
+username='strathchainuser'
 passwd=$1		#Getting password from command line args
 
 # Update the system
